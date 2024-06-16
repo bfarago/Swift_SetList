@@ -14,7 +14,11 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
             name: "Swift_SetList",
-            path: "setlist_app/SetList/SetList"
+            path: "setlist_app/SetList/SetList",
+            exclude: [
+                "Assets.xcassets", "Preview Content/Preview Assets.xcassets" 
+                //, "SetList.xcdatamodeld"
+            ]
         ),
     ]
 )

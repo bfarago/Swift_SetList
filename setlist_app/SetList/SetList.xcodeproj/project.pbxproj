@@ -14,6 +14,7 @@
 		A60E72012C1F4A53001D120F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E72002C1F4A53001D120F /* Persistence.swift */; };
 		A60E72042C1F4A53001D120F /* SetList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A60E72022C1F4A53001D120F /* SetList.xcdatamodeld */; };
 		A60E720B2C1F53D8001D120F /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E720A2C1F53D8001D120F /* SongDetailView.swift */; };
+		A60E72132C1F7571001D120F /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E72122C1F7571001D120F /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A60E72002C1F4A53001D120F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A60E72032C1F4A53001D120F /* SetList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SetList.xcdatamodel; sourceTree = "<group>"; };
 		A60E720A2C1F53D8001D120F /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
+		A60E72122C1F7571001D120F /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		A60E71EB2C1F4A51001D120F = {
 			isa = PBXGroup;
 			children = (
+				A60E72122C1F7571001D120F /* Package.swift */,
 				A60E71F62C1F4A51001D120F /* SetList */,
 				A60E71F52C1F4A51001D120F /* Products */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60E72132C1F7571001D120F /* Package.swift in Sources */,
 				A60E72042C1F4A53001D120F /* SetList.xcdatamodeld in Sources */,
 				A60E720B2C1F53D8001D120F /* SongDetailView.swift in Sources */,
 				A60E72012C1F4A53001D120F /* Persistence.swift in Sources */,
@@ -287,6 +291,8 @@
 				DEVELOPMENT_TEAM = 8KFBRL79RZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SetList;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +322,8 @@
 				DEVELOPMENT_TEAM = 8KFBRL79RZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SetList;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
