@@ -21,7 +21,7 @@ let package = Package(
         ),
         .testTarget(
             name: "Swift_SetList_Tests",
-            dependencies: ["Swift_SetList"]
+            dependencies: ["Swift_SetList"],
             path: "setlist_app/SetList/SetListUITests"
         ),
     ]
