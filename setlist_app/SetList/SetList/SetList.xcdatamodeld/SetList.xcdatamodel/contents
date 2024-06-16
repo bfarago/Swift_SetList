@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Section" representedClassName="Section" syncable="YES" codeGenerationType="class">
-        <attribute name="bars" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="info" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="notes" optional="YES" attributeType="String"/>
-        <attribute name="repeat" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Song"/>
-    </entity>
     <entity name="Song" representedClassName="Song" syncable="YES" codeGenerationType="class">
         <attribute name="artist" optional="YES" attributeType="String"/>
         <attribute name="bpm" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
