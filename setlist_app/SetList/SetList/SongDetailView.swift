@@ -6,25 +6,19 @@
 //
 
 import SwiftUI
-import CoreData
+import SwiftData
 
 struct SongDetailView: View {
-    @ObservedObject var song: Song
-
+    //@ObservedObject var song: Song
+    @Bindable var song: Song
     var body: some View {
         Form {
             Section(header: Text("Song Details")) {
-                TextField("Title", text: Binding(
-                    get: { song.stitle ?? "" },
-                    set: { song.stitle = $0 }
-                ))
-                TextField("Artist", text: Binding(
-                    get: { song.artist ?? "" },
-                    set: { song.artist = $0 }
-                ))
+                TextField("Title", text: $song.stitle)
+                TextField("Artist", text: $song.artist)
                 TextField("BPM", value: Binding(
                     get: { Int(song.bpm) },
-                    set: { song.bpm = Int16($0) }
+                    set: { song.bpm = Int($0) }
                 ), formatter: NumberFormatter())
                 TextField("Genre", text: Binding(
                     get: { song.genre ?? "" },
@@ -46,8 +40,8 @@ struct SongDetailView: View {
             }
  */
         }
-        .navigationTitle(song.stitle ?? "Unknown Song")
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(song.stitle)
+        //.navigationBarTitleDisplayMode(.inline)
     
     }
 }

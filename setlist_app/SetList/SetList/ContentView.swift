@@ -6,29 +6,27 @@
 //
 
 import SwiftUI
-import CoreData
+import SwiftData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.modelContext) private var modelContext
 
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Song.stitle, ascending: true)],
-        animation: .default)
-    private var songs: FetchedResults<Song>
+    @Query(sort: \Song.stitle, order: .forward) private var songs: [Song]
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(songs) { song in
-                    NavigationLink(destination: SongDetailView(song: song) ) {
-                        Text(song.stitle ?? "Unknown Title")
+                    NavigationLink(destination: SongDetailView(song: song)) {
+                        Text(song.stitle)
                     }
                 }
                 .onDelete(perform: deleteSongs)
             }
             .navigationTitle("Songs")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                //ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem() {
                     Button(action: addSong) {
                         Label("Add Song", systemImage: "plus")
                     }
@@ -38,38 +36,15 @@ struct ContentView: View {
     }
 
     private func addSong() {
-        withAnimation {
-            let newSong = Song(context: viewContext)
-            newSong.stitle = "New Song"
-            newSong.artist = "Unknown Artist"
-            newSong.bpm = 120
-            newSong.genre = "Unknown Genre"
-            newSong.notes = "No Notes"
-
-            do {
-                try viewContext.save()
-            } catch {
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+        let newSong = Song(stitle: "New Song", artist: "Unknown Artist", bpm: 120, genre: "Unknown Genre", notes: "No Notes")
+        modelContext.insert(newSong)
+        try? modelContext.save()
     }
 
-    private func deleteSongs(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { songs[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+    private func deleteSongs(at offsets: IndexSet) {
+        for index in offsets {
+            modelContext.delete(songs[index])
         }
+        try? modelContext.save()
     }
 }
-/*
-#Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-}
-*/

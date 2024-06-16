@@ -14,6 +14,7 @@ struct SetListApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                //.environment(\.modelContext, PersistenceController.shared.container.managedObjectModel)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
