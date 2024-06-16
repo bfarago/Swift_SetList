@@ -14,8 +14,6 @@
 		A60E72012C1F4A53001D120F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E72002C1F4A53001D120F /* Persistence.swift */; };
 		A60E72042C1F4A53001D120F /* SetList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A60E72022C1F4A53001D120F /* SetList.xcdatamodeld */; };
 		A60E720B2C1F53D8001D120F /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E720A2C1F53D8001D120F /* SongDetailView.swift */; };
-		A60E720F2C1F5B6C001D120F /* Song_CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E720E2C1F5B6C001D120F /* Song_CoreDataClass.swift */; };
-		A60E72112C1F5BF6001D120F /* Song_CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E72102C1F5BF6001D120F /* Song_CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +25,6 @@
 		A60E72002C1F4A53001D120F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A60E72032C1F4A53001D120F /* SetList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SetList.xcdatamodel; sourceTree = "<group>"; };
 		A60E720A2C1F53D8001D120F /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
-		A60E720E2C1F5B6C001D120F /* Song_CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song_CoreDataClass.swift; sourceTree = "<group>"; };
-		A60E72102C1F5BF6001D120F /* Song_CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Song_CoreDataProperties.swift; path = /Users/bfarago/Local/git/Swift_SetList/setlist_app/SetList/SetList/Song_CoreDataProperties.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +64,6 @@
 				A60E72022C1F4A53001D120F /* SetList.xcdatamodeld */,
 				A60E71FD2C1F4A53001D120F /* Preview Content */,
 				A60E720A2C1F53D8001D120F /* SongDetailView.swift */,
-				A60E720E2C1F5B6C001D120F /* Song_CoreDataClass.swift */,
-				A60E72102C1F5BF6001D120F /* Song_CoreDataProperties.swift */,
 			);
 			path = SetList;
 			sourceTree = "<group>";
@@ -154,10 +148,8 @@
 			files = (
 				A60E72042C1F4A53001D120F /* SetList.xcdatamodeld in Sources */,
 				A60E720B2C1F53D8001D120F /* SongDetailView.swift in Sources */,
-				A60E720F2C1F5B6C001D120F /* Song_CoreDataClass.swift in Sources */,
 				A60E72012C1F4A53001D120F /* Persistence.swift in Sources */,
 				A60E71FA2C1F4A51001D120F /* ContentView.swift in Sources */,
-				A60E72112C1F5BF6001D120F /* Song_CoreDataProperties.swift in Sources */,
 				A60E71F82C1F4A51001D120F /* SetListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

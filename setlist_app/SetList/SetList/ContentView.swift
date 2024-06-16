@@ -12,7 +12,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Song.title, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Song.stitle, ascending: true)],
         animation: .default)
     private var songs: FetchedResults<Song>
 
@@ -20,8 +20,8 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(songs) { song in
-                    NavigationLink(destination: SongDetailView(song: song)) {
-                        Text(song.title ?? "Unknown Title")
+                    NavigationLink(destination: SongDetailView(song: song) ) {
+                        Text(song.stitle ?? "Unknown Title")
                     }
                 }
                 .onDelete(perform: deleteSongs)
@@ -40,7 +40,7 @@ struct ContentView: View {
     private func addSong() {
         withAnimation {
             let newSong = Song(context: viewContext)
-            newSong.title = "New Song"
+            newSong.stitle = "New Song"
             newSong.artist = "Unknown Artist"
             newSong.bpm = 120
             newSong.genre = "Unknown Genre"
@@ -68,6 +68,8 @@ struct ContentView: View {
         }
     }
 }
+/*
 #Preview {
     ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
+*/
