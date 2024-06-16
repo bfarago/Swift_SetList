@@ -19,5 +19,10 @@ let package = Package(
                 //, "SetList.xcdatamodeld"
             ]
         ),
+        .testTarget(
+            name: "Swift_SetList_Tests",
+            dependencies: ["Swift_SetList"]
+            path: "setlist_app/SetList/SetListUITests"
+        ),
     ]
 )
