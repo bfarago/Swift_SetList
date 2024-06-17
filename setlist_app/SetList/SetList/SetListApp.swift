@@ -13,6 +13,6 @@ struct SetListApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Song.self)
+        .modelContainer(for: [Song.self, Structure.self])
     }
 }

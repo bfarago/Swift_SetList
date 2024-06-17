@@ -15,6 +15,7 @@ class Song {
     var bpm: Int
     var genre: String?
     var notes: String?
+    @Relationship var structures: [Structure]
 
     init(stitle: String, artist: String, bpm: Int, genre: String, notes: String? = nil) {
         self.id = UUID()
@@ -23,5 +24,6 @@ class Song {
         self.bpm = bpm
         self.genre = genre
         self.notes = notes
+        self.structures = []
     }
 }

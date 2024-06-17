@@ -15,6 +15,8 @@
 		A60E72152C1F9829001D120F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E72142C1F9829001D120F /* Song.swift */; };
 		A60E721D2C1FA988001D120F /* SetListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E721C2C1FA988001D120F /* SetListUITests.swift */; };
 		A60E721F2C1FA988001D120F /* SetListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E721E2C1FA988001D120F /* SetListUITestsLaunchTests.swift */; };
+		A60E72272C209845001D120F /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E72262C209845001D120F /* Structure.swift */; };
+		A60E72292C209EEC001D120F /* StructureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E72282C209EEC001D120F /* StructureDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		A60E721A2C1FA988001D120F /* SetListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60E721C2C1FA988001D120F /* SetListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListUITests.swift; sourceTree = "<group>"; };
 		A60E721E2C1FA988001D120F /* SetListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A60E72262C209845001D120F /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		A60E72282C209EEC001D120F /* StructureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				A60E71FB2C1F4A53001D120F /* Assets.xcassets */,
 				A60E71FD2C1F4A53001D120F /* Preview Content */,
 				A60E720A2C1F53D8001D120F /* SongDetailView.swift */,
+				A60E72282C209EEC001D120F /* StructureDetailView.swift */,
 			);
 			path = SetList;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				A60E72142C1F9829001D120F /* Song.swift */,
+				A60E72262C209845001D120F /* Structure.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			files = (
 				A60E72152C1F9829001D120F /* Song.swift in Sources */,
 				A60E720B2C1F53D8001D120F /* SongDetailView.swift in Sources */,
+				A60E72272C209845001D120F /* Structure.swift in Sources */,
 				A60E71FA2C1F4A51001D120F /* ContentView.swift in Sources */,
 				A60E71F82C1F4A51001D120F /* SetListApp.swift in Sources */,
+				A60E72292C209EEC001D120F /* StructureDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,7 @@ struct ContentView: View {
                 ForEach(songs) { song in
                     NavigationLink(destination: SongDetailView(song: song)) {
                         Text(song.stitle)
+                        Text(song.artist)
                     }
                 }
                 .onDelete(perform: deleteSongs)
