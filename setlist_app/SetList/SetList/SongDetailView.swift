@@ -47,7 +47,6 @@ struct SongDetailView: View {
  
         }
         .navigationTitle(song.stitle)
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem() {
                 Button(action: addStructure) {

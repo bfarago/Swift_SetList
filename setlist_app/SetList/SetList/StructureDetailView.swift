@@ -21,9 +21,8 @@ struct StructureDetailView: View {
             }
         }
         .navigationTitle(structure.name)
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem() {
                 Button(action: saveStructure) {
                     Text("Save")
                 }
