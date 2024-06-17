@@ -9,8 +9,7 @@ import SwiftData
 
 @Model
 class Song {
-    //@Attribute(.primaryKey)
-    var id: UUID
+    @Attribute var id: UUID
     var stitle: String
     var artist: String
     var bpm: Int

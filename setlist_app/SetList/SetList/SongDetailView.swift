@@ -9,7 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct SongDetailView: View {
-    //@ObservedObject var song: Song
     @Bindable var song: Song
     var body: some View {
         Form {
