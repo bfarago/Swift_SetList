@@ -7,5 +7,6 @@ This branch actually tests, if latest framework and toolchain is available. (Swi
 Unit Test was missing, therefore I added one. Lets see...
 [![Swift](https://github.com/bfarago/Swift_SetList/actions/workflows/swift.yml/badge.svg)](https://github.com/bfarago/Swift_SetList/actions/workflows/swift.yml)
 In the latest version: a Song-Structure (list of sections) can be added to each songs on the setlist...
+Schema version and inport/export will be handled soon, refactoring. 
 
 ![screenshot](doc/sshot1.png)

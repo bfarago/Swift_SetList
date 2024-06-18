@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+typealias Song = SchemaV1.Song
+typealias Structure = SchemaV1.Structure
+
 @main
 struct SetListApp: App {
     var body: some Scene {
